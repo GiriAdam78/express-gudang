@@ -1,0 +1,33 @@
+{
+  "name": "express-gudang",
+  "version": "1.0.0",
+  "description": "API Gudang Express",
+  "main": "server.js",
+  "type": "module",
+  "author": "Giri Diwa Adam",
+  "license": "MIT",
+  "scripts": {
+    "dev": "nodemon server.js",
+    "vercel-build": "prisma generate && prisma migrate deploy",
+    "start": "node server.js",
+    "migrate:dev": "prisma migrate dev",
+    "migrate:deploy": "prisma migrate deploy",
+    "migrate:status": "prisma migrate status",
+    "generate": "prisma generate"
+  },
+  "keywords": [
+    "API",
+    "Gudang",
+    "Express"
+  ],
+  "dependencies": {
+    "@prisma/client": "^6.1.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9",
+    "prisma": "^6.1.0"
+  }
+}
